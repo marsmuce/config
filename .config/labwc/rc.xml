@@ -1,0 +1,68 @@
+<labwc_config>
+  <libinput>
+    <device>
+      <naturalScroll>no</naturalScroll>
+    </device>
+  </libinput>
+  <theme>
+    <name>bw</name>
+    <icon>Chicago95</icon>
+    <font>
+      <name>GohuFont11 Nerd Font Mono</name>
+      <size>16</size>
+    </font>
+    <cornerRadius>0</cornerRadius>
+    <keepBorder>yes</keepBorder>
+  </theme>
+  <keyboard>
+    <keybind key="A-F4">
+      <action name="Close" />
+    </keybind>
+     <keybind key="A-Tab">
+      <action name="NextWindow" />
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow" />
+    </keybind>
+    <keybind key="W-Return">
+      <action name="Execute" command="foot" />
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute" command="volume down" />
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute" command="volume up" />
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute" command="volume mute" />
+    </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute" command="brightnessctl set +10%" />
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute" command="brightnessctl set 10%-" />
+    </keybind>
+   
+    <keybind key="Print">
+      <action name="Execute">
+        <command>/usr/bin/sh /home/mars/.local/bin/screenshot</command>
+      </action>
+    </keybind>
+
+    <keybind key="C-A-Delete">>
+      <action name="Execute" command="/usr/bin/foot --fullscreen /home/mars/.local/bin/powermenu.sh" />
+       <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+   </keybind>
+
+    <keybind key="W-Space">
+      <action name="Execute" command="wofi --show drun" />
+      <position>
+        <x>center</x>
+        <y>center</y>
+      </position>
+    </keybind>
+  </keyboard>
+</labwc_config>

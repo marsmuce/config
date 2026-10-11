@@ -1,0 +1,4 @@
+// keybinds managed by niri-settings. Consider moving existing binds here.
+binds {
+    Super+Space { spawn-sh "wofi -show drun" ; }
+}

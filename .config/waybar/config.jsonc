@@ -1,0 +1,78 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "top",
+    "height" : 48,
+    "width" : -1,
+    "spacing" : 16,
+
+
+
+    "modules-left": [
+        "custom/icon",
+        "clock"
+    ],
+
+    "modules-center": [
+    ],
+
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+
+
+
+    "clock": {
+        "timezone": "America/New_York",
+        "format": "{:%I:%M %p}"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "tooltip-format": "{timeTo}",
+        "format-icons": ["", "", "", "", ""],
+        "on-click": "/usr/bin/foot --fullscreen /home/mars/.local/bin/powermenu.sh"
+    },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-linked": "󱞐",
+        "format-disconnected": "",
+        "tooltip-format": "{ipaddr}/{cidr}",
+        "on-click": "foot nmtui"
+    },
+
+    "custom/icon": {
+        "format" : "[  ]",
+        "on-click": "wofi --show drun"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+	    "format-bluetooth": "{icon} ",
+	    "format-muted": "",
+    	"format-icons": {
+    		"default": ["", ""]
+	    },
+        "tooltip-format": "{volume}%",
+        "on-click": "foot -w 800x400 /usr/bin/wiremix"
+    },
+    "backlight": {
+	    "format": "{icon}",
+	    "format-icons": ["", ""],
+        "tooltip-format": "{percent}%",
+        "on-click": "/home/mars/.local/bin/wlsunset-t"
+    }
+}

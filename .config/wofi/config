@@ -1,0 +1,12 @@
+width=720
+height=420
+show=drun
+prompt=Search
+term=foot
+matching=contains
+insensitive=true
+allow_markup=true
+hide_scroll=true
+normal_window=true
+image_size=24
+allow_images=true

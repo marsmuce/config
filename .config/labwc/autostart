@@ -1,0 +1,8 @@
+lxqt-policykit-agent >/dev/null 2>&1 &
+wlsunset -l 43.2 -L -77.6 &
+dunst &
+udiskie &
+#swayidle timeout 300 'swaylock -i $HOME/bg & systemctl suspend' &
+#sway-audio-idle-inhibit &
+waybar &
+swaybg -i $HOME/bg -m fill &

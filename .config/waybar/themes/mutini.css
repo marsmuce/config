@@ -1,0 +1,16 @@
+* {
+    font-family: GohuFont11 Nerd Font Mono;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: #ffdde8;
+    color: #ffffff;
+}
+
+.modules-left,
+.modules-right {
+    background-color: #ffc6d9;
+    padding: 0px 3px 0px 3px;
+    margin: 3px;
+}
