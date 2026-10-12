@@ -65,4 +65,12 @@
       </position>
     </keybind>
   </keyboard>
+  <windowRules>
+    <windowRule identifier="foot">
+      <action name="SetDecorations" decorations="border" />
+    </windowRule>
+    <windowRule identifier="wofi">
+      <action name="SetDecorations" decorations="border" />
+    </windowRule>
+  </windowRules>
 </labwc_config>

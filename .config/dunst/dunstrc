@@ -1,5 +1,5 @@
 [global]
-    font = "Symbols Nerd Font","DejaVu Sans"
+    font = "GohuFont11 Nerd Font Mono"
     layer = overlay
     allow_markup = yes
     markup = yes
