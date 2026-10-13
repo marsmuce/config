@@ -1,6 +1,8 @@
 # Start Wayland at login
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+        systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+        dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc
         #exec labwc
         #exec niri
         #exec startx
