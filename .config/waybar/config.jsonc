@@ -28,7 +28,7 @@
     "clock": {
         "timezone": "America/New_York",
         "format": "{:%I:%M %p}",
-        "on-click": "foot -w 256x256 -H /usr/bin/cal"
+        "on-click": "foot -w 300x300 -H /usr/bin/cal"
     },
 
     "battery": {
