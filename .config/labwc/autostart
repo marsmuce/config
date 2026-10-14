@@ -1,3 +1,5 @@
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc
 lxqt-policykit-agent >/dev/null 2>&1 &
 wlsunset -l 43.2 -L -77.6 &
 dunst &
